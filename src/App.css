@@ -1,0 +1,123 @@
+
+* {
+  font-family: 'Segoe Ui';
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background: rgb(27,27,27);
+  background: linear-gradient(87deg, rgba(27,27,27,1) 7%, rgba(26,54,54,1) 60%);}
+.to-do-list{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  font-size: 4rem;
+  color: #fefefe;
+  margin: 10% 0 18% 0;
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin-left: 1%;
+}
+.input-container {
+  display: flex;
+}
+.add-button{
+  background-color: orange;
+}
+.add-button:hover{
+  background-color: orangered;
+}
+
+.delete-button{
+  background-color: hsl(10, 90%, 50%);
+}
+.delete-button:hover{
+  background-color: hsl(10, 90%, 40%);
+}
+.move-button{
+  background-color: rgb(0, 255, 0);
+}
+.move-button:hover{
+  background-color: green;
+}
+input[type="text"]{
+  width: 30vw;
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid #40534C;
+  border-radius: 5px;
+  color: hsla(0, 0%, 100%, 0.757);
+  background: #40534C;
+}
+ol{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0 3% 10% ;
+}
+li{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1%;
+  background-color: #6d877d;
+  margin-bottom: 7px;
+  border: 3px solid #6d877d;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  color: hsla(0, 0%, 100%, 0.757);
+}
+.text{
+  flex: 1;
+}
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+.todoContainer {
+  margin-top: 7%;
+  justify-self: center;
+  width: 49vw;
+  height: 85vh;
+  background: #1A3636;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 14px;
+  transition: all 0.5s ease-in-out;
+  overflow-y: hidden;
+
+}
+.todoContainer:hover {
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+section {
+  margin: 3% 0 3% 0;
+  overflow-y: scroll;
+  width: 80%;
+  height: 35vh;
+  background: #40534C;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .todoContainer {
+    width: 85vw;
+  }
+}
